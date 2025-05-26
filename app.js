@@ -251,7 +251,7 @@ function emergencyContactsHTML() {
   <div class="emergency-contacts">
     <h3>Emergency Contacts</h3>
     <ul>
-      <li><span class="icon">📞</span><div><strong>Emergency Services</strong><div class="text-muted">Call 911 for immediate help</div></div></li>
+      <li><span class="icon">📞</span><div><strong>Emergency Services</strong><div class="text-muted">Call Institute Wellness Centre for immediate help</div></div></li>
       <li><span class="icon">💬</span><div><strong>Crisis Text Line</strong><div class="text-muted">Text HOME to 741741</div></div></li>
       <li><span class="icon">📱</span><div><strong>National Suicide Prevention Lifeline</strong><div class="text-muted">Call 1-800-273-8255</div></div></li>
     </ul>
