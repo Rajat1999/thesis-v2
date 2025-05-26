@@ -1,0 +1,348 @@
+:root {
+  --sky-blue: #A9D6E5;
+  --powder-lilac: #D6CDEA;
+  --mint: #C8E7D8;
+  --blush: #F7D6E0;
+  --peach: #FFE5D9;
+  --sand: #F8F9FA;
+  --lavender: #B5B9F8;
+  --rose: #E7A6A1;
+  --lemon: #FFF6B7;
+  --slate: #7B8FA1;
+  --charcoal: #2D2D2D;
+  --gray: #5A5A5A;
+  --light-gray: #B0B0B0;
+  --accent-green: #36E08B;
+}
+
+body {
+  font-family: 'Karla', Arial, sans-serif;
+  background: var(--sand);
+  color: var(--charcoal);
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(169, 214, 229, 0.06);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+.nav-logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--charcoal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo .byline {
+  font-size: 0.9rem;
+  color: var(--light-gray);
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--slate);
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.nav-links .active,
+.nav-links a:hover {
+  color: var(--sky-blue);
+  border-bottom: 2px solid var(--sky-blue);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+main#content {
+  max-width: 1100px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+  min-height: 80vh;
+}
+
+.page-section {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px rgba(169, 214, 229, 0.10);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--charcoal);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--slate);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--rose);
+  margin-bottom: 0.7rem;
+}
+
+.text-muted {
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quick-actions button {
+  background: var(--mint);
+  color: var(--charcoal);
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 1.7rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(200, 231, 216, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.quick-actions button:hover {
+  background: var(--sky-blue);
+}
+
+.card-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(169, 214, 229, 0.10);
+  padding: 1.2rem 1.5rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 0.5rem;
+  background: var(--peach);
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 0.3rem;
+}
+
+.card-desc {
+  font-size: 0.98rem;
+  color: var(--gray);
+}
+
+.resource-tags {
+  margin-bottom: 1.5rem;
+}
+
+.resource-tags button {
+  background: var(--blush);
+  margin-right: 0.5rem;
+  color: var(--slate);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  background: var(--mint);
+  color: var(--charcoal);
+  font-size: 1.1rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.anonymous-stories-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--blush);
+  border-radius: 18px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.anonymous-stories-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: var(--peach);
+}
+
+.anonymous-stories-content {
+  flex: 1;
+}
+
+.btn-main {
+  background: var(--accent-green);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(54, 224, 139, 0.10);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background: #2DC97A;
+}
+
+.account-box {
+  background: #fff;
+  border-radius: 16px;
+  border: 1.5px dashed var(--sky-blue);
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--gray);
+  font-size: 1.1rem;
+}
+
+.account-box button {
+  background: var(--mint);
+  color: var(--charcoal);
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.emergency-contacts {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 1px 6px rgba(169, 214, 229, 0.10);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.emergency-contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+
+.emergency-contacts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+  color: var(--slate);
+}
+
+.emergency-contacts .icon {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 900px) {
+  .card-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .anonymous-stories-card {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  #navbar, main#content {
+    padding: 0 0.5rem;
+  }
+  .page-section {
+    padding: 1.2rem 0.5rem;
+  }
+  .card {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
